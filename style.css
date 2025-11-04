@@ -1,0 +1,358 @@
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant Garamond", serif;
+}
+
+body {
+  background-color: #fffdf8;
+  color: #3c2f2f;
+  line-height: 1.6;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #faf4ec;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav h1 {
+  color: #864b12;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3c2f2f;
+  font-weight: 500;
+  font-size: 1.05em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ce793a;
+}
+
+/* ========== HERO SECTIONS ========== */
+.hero,
+.hero-goa,
+.hero-udaipur,
+.hero-kashmir,
+.hero-delhi,
+.hero-about,
+.hero-contact {
+  color: #fff;
+  text-align: center;
+  padding: 180px 20px;
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Home Page Hero */
+.hero {
+  background: url("images/india-hero.jpg") center center / cover no-repeat;
+}
+
+/* Overlay for readability */
+.hero::before,
+.hero-goa::before,
+.hero-udaipur::before,
+.hero-kashmir::before,
+.hero-delhi::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Hero Text */
+.hero h2,
+.hero-goa h2,
+.hero-udaipur h2,
+.hero-kashmir h2,
+.hero-delhi h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.8em;
+  letter-spacing: 0.5px;
+}
+
+.hero p {
+  position: relative;
+  z-index: 1;
+  margin-top: 12px;
+  font-size: 1.2em;
+}
+
+/* ========== INDIVIDUAL HERO BACKGROUNDS ========== */
+.hero-goa {
+  background: url("images/goa-hero.jpg") center 60% / cover no-repeat;
+}
+
+.hero-udaipur {
+  background: url("images/udaipur-hero.jpg") center 65% / cover no-repeat;
+}
+
+.hero-kashmir {
+  background: url("images/kashmir-hero.jpg") center 70% / cover no-repeat;
+}
+
+.hero-delhi {
+  background: url("images/delhi-hero.jpg") center 60% / cover no-repeat;
+}
+
+/* About & Contact Heroes */
+.hero-about {
+  background: linear-gradient(135deg, #937a24, #ce793a);
+}
+
+.hero-contact {
+  background: linear-gradient(135deg, #864b12, #ce793a);
+}
+
+/* ========== INTRO & CONTENT ========== */
+.intro,
+.content {
+  padding: 60px 80px;
+  background-color: #faf4ec;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.intro h2,
+.content h2 {
+  color: #480903;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+/* Decorative underline */
+.intro h2::after,
+.content h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #937a24;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.content p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #3c2f2f;
+  font-size: 1.05em;
+}
+
+/* ========== DESTINATION GRID ========== */
+.destinations {
+  padding: 60px 80px;
+  text-align: center;
+  background-color: #fffdf8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  text-decoration: none;
+  color: #3c2f2f;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #faf4ec;
+  color: #480903;
+  font-weight: 600;
+}
+
+/* ========== GALLERY ========== */
+.gallery {
+  padding: 60px 60px;
+  text-align: center;
+  background-color: #fffdf8;
+}
+
+.gallery h2 {
+  color: #480903;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ========== LIST STYLING ========== */
+.content ol,
+.content ul {
+  list-style-position: inside;
+  max-width: 600px;
+  margin: 25px auto;
+  padding-left: 0;
+  text-align: left;
+  color: #3c2f2f;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.content li {
+  margin: 6px 0;
+}
+
+.content ul ul {
+  list-style-type: circle;
+  margin-left: 25px;
+}
+
+/* ========== SPOTIFY PLAYLIST SECTION (FULL-WIDTH + CLEAN) ========== */
+.playlist-section {
+  background-color: #faf4ec;
+  text-align: center;
+  padding: 40px 0;
+  width: 100%;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+
+.playlist-section h2 {
+  color: #480903;
+  margin-bottom: 10px;
+}
+
+.playlist-section p {
+  color: #3c2f2f;
+  margin-bottom: 15px;
+  font-size: 1.05em;
+}
+
+/* Spotify Embed */
+.playlist-section iframe {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 850px;
+  height: 152px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* ========== TABLE ========== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  border: 1px solid #e5d1a4;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #937a24;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #faf4ec;
+  color: #3c2f2f;
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+footer a {
+  color: #864b12;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #ce793a;
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE FIXES ========== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .intro,
+  .content,
+  .destinations,
+  .gallery {
+    padding: 40px 20px;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+}

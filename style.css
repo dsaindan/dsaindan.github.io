@@ -1,4 +1,4 @@
-/* ========== GLOBAL STYLES ========== */
+/* GLOBAL STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* ========== NAVIGATION ========== */
+/*  NAVIGATION */
 nav {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@ nav a:hover {
   color: #ce793a;
 }
 
-/* ========== HERO SECTIONS ========== */
+/*  HERO SECTIONS */
 .hero,
 .hero-goa,
 .hero-udaipur,
@@ -104,7 +104,7 @@ nav a:hover {
   font-size: 1.2em;
 }
 
-/* ========== INDIVIDUAL HERO BACKGROUNDS ========== */
+/*  INDIVIDUAL HERO BACKGROUNDS */
 .hero-goa {
   background: url("images/goa-hero.jpg") center 60% / cover no-repeat;
 }
@@ -130,7 +130,7 @@ nav a:hover {
   background: linear-gradient(135deg, #864b12, #ce793a);
 }
 
-/* ========== INTRO & CONTENT ========== */
+/*  INTRO & CONTENT  */
 .intro,
 .content {
   padding: 60px 80px;
@@ -168,7 +168,7 @@ nav a:hover {
   font-size: 1.05em;
 }
 
-/* ========== DESTINATION GRID ========== */
+/*  DESTINATION GRID */
 .destinations {
   padding: 60px 80px;
   text-align: center;
@@ -211,7 +211,7 @@ nav a:hover {
   font-weight: 600;
 }
 
-/* ========== GALLERY ========== */
+/*  GALLERY  */
 .gallery {
   padding: 60px 60px;
   text-align: center;
@@ -238,7 +238,7 @@ nav a:hover {
   border-radius: 10px;
 }
 
-/* ========== LIST STYLING ========== */
+/*  LIST STYLING  */
 .content ol,
 .content ul {
   list-style-position: inside;
@@ -260,7 +260,7 @@ nav a:hover {
   margin-left: 25px;
 }
 
-/* ========== SPOTIFY PLAYLIST SECTION (FULL-WIDTH + CLEAN) ========== */
+/*  SPOTIFY PLAYLIST SECTION  */
 .playlist-section {
   background-color: #faf4ec;
   text-align: center;
@@ -293,7 +293,7 @@ nav a:hover {
   border-radius: 12px;
 }
 
-/* ========== TABLE ========== */
+/*  TABLE  */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -316,7 +316,7 @@ table th {
   font-weight: 600;
 }
 
-/* ========== FOOTER ========== */
+/*  FOOTER  */
 footer {
   background-color: #faf4ec;
   color: #3c2f2f;
@@ -337,7 +337,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ========== RESPONSIVE FIXES ========== */
+/*  RESPONSIVE FIXES  */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -355,4 +355,5 @@ footer a:hover {
   .hero h2 {
     font-size: 2em;
   }
+
 }
